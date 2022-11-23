@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+[x-cloak] { 
+    display: none !important; 
+}
+
+@layer components {
+    .form-input {
+        @apply w-full px-4 py-1.5 text-sm font-medium rounded-lg focus:outline-none border border-gray-300 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 placeholder-gray-400
+    }
+
+    .form-label {
+        @apply block text-gray-500 text-sm font-semibold mb-1;
+    }
+
+    .form-error {
+        @apply text-red-500 font-medium text-sm mt-1;
+    }
+
+    .form-confirm-button {
+        @apply bg-pink-100 hover:bg-pink-200 text-pink-500 font-bold text-xs lg:text-sm px-4 py-2 rounded-lg;
+    }
+
+    .form-cancel-button {
+        @apply bg-gray-100 hover:bg-gray-200 text-gray-500 font-bold text-xs lg:text-sm px-4 py-2 rounded-lg;
+    }
+}
